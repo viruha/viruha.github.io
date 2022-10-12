@@ -1,0 +1,56 @@
+
+
+.header-principal{
+
+
+}
+ .header-principal .contenedor{
+    padding: 10px;
+    margin: auto;
+    max-width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header-logo{
+    display: flex;
+    align-items: center;;
+}
+
+.contenedorprincipal{
+    padding: 10px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.contenedormain{
+    padding: 10px;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footcontenedor{
+    padding: 10px;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+}
+
+.marcas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
