@@ -1,10 +1,6 @@
+.header-principal {}
 
-
-.header-principal{
-
-
-}
- .header-principal .contenedor{
+.header-principal .contenedor {
     padding: 10px;
     margin: auto;
     max-width: 1200px;
@@ -12,21 +8,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-.header-logo{
+.header-logo {
     display: flex;
-    align-items: center;;
+    align-items: center;
+    ;
 }
 
-.contenedorprincipal{
+.contenedorprincipal {
     padding: 10px;
     margin: auto;
     max-width: 1200px;
 }
 
-.contenedormain{
+.contenedormain {
     padding: 10px;
     margin: auto;
     max-width: 1200px;
@@ -36,17 +33,21 @@
     align-items: center;
 }
 
-.impresoras {    display: flex;
+.impresoras {
+    display: flex;
     justify-content: space-around;
-    align-items: center;}
+    align-items: center;
+
+}
+
 .filamentos {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-    }
 
-.footcontenedor{
+}
+
+.footcontenedor {
     padding: 10px;
     margin: auto;
     max-width: 1200px;
@@ -55,12 +56,12 @@
     align-items: center;
 }
 
-.foot{
+.foot {
     display: flex;
     flex-direction: column;
 }
 
-.marcas{
+.marcas {
     display: flex;
     align-items: center;
     justify-content: space-around;
