@@ -80,6 +80,29 @@ i {
     
 }
 
+.impresoratexto h1{
+    border-bottom: 3px solid coral;
+    
+}
+
 .filamentotexto{
     margin-right: 10px;
+}
+
+.filamentotexto h1{
+    border-bottom: 3px solid coral;
+}
+
+.leermas{
+    padding: 10px;
+    background-color: coral;
+    border-radius: 5px;
+}
+
+.leermas:hover{
+
+    color: rgb(255, 255, 255);
+
+    
+
 }
