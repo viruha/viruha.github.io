@@ -28,9 +28,8 @@
     margin: auto;
     max-width: 1200px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 .impresoras {

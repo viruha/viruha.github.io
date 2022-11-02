@@ -102,7 +102,40 @@ i {
 .leermas:hover{
 
     color: rgb(255, 255, 255);
+}
 
+.contenedorform{
+    text-align: center;
+    width: 100%;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.textareaform{
+    color: rgb(255, 255, 255);
+    height: 150px;
+    resize: none;
+    background-color: coral;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    margin: auto;
+    width: 90%;
+
+}
+
+.edtform{
+    color: rgb(255, 255, 255);
+    background-color: coral;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 5px;
+    margin: 0 0 30px;
+    height:30px;
+    width: 45%;
     
 
 }
