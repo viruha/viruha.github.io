@@ -28,7 +28,7 @@
     margin: auto;
     max-width: 1200px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
