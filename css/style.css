@@ -4,56 +4,48 @@ html {
     font-weight: 600;
 }
 
-h1{
+h1 {
     font-size: 26px;
 }
 
-h2{
+h2 {
     font-size: 20;
     font-weight: 700;
     font-style: italic;
     margin-bottom: 5px;
-    
-
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     transition: .5s;
     margin: 3px;
 }
 
-a:hover{
+a:hover {
     text-decoration: solid;
     color: coral;
     font-weight: 700;
     border-left: 3px solid coral;
-
 }
+
 i {
     margin-right: 5px;
-
 }
 
-.contenedor {
-
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.0) 0px -3px 5px;
+.pad10{
+    padding: 10px;
 }
+.header-principal{
 
-.header-logo {
     
+}
+.header-logo {
 }
 
 .header-navegacion-link {
     margin: 10px;
-    
 }
-
-.contenedorprincipal {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.0) 0px -3px 5px;
-}
-
 
 
 .marcas {
@@ -62,59 +54,60 @@ i {
 }
 
 .footcontenedor {
-
     border-style: solid;
     border-width: 1px 0px 0px 0px;
-
-
 }
 
-.foot h2{
- 
+.foot h2 {
     border-bottom: 3px solid coral;
-    
 }
 
-.impresoratexto{
+.impresoratexto {
     margin-left: 10px;
-    
 }
 
-.impresoratexto h1{
+.impresoratexto h1 {
     border-bottom: 3px solid coral;
-    
 }
 
-.filamentotexto{
+.filamentotexto {
     margin-right: 10px;
 }
 
-.filamentotexto h1{
+.filamentotexto h1 {
     border-bottom: 3px solid coral;
 }
 
-.leermas{
+.leermas {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
     padding: 10px;
     background-color: coral;
     border-radius: 5px;
+    width: 20%;
+    margin: auto;
+}
+.leermaserror{
+    border: 3px solid red;
 }
 
-.leermas:hover{
-
+.leermas:hover {
     color: rgb(255, 255, 255);
 }
 
-.contenedorform{
+.contenedorform {
     text-align: center;
     width: 100%;
 }
-.formulario{
+
+.formulario {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.textareaform{
+.textareaform {
     color: rgb(255, 255, 255);
     height: 150px;
     resize: none;
@@ -124,18 +117,21 @@ i {
     border-radius: 5px;
     margin: auto;
     width: 90%;
-
 }
 
-.edtform{
+.edtform {
     color: rgb(255, 255, 255);
     background-color: coral;
     border-style: solid;
-    border-width: 0;
+    border-width: 3;
     border-radius: 5px;
     margin: 0 0 30px;
-    height:30px;
+    height: 30px;
     width: 45%;
-    
+}
 
+.sombra {
+    margin: auto;
+    max-width: 1200px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.0) 0px -3px 5px;
 }

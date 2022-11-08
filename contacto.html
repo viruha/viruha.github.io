@@ -2,114 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/maqueta.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/maqueta.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b67d1146f3.js" crossorigin="anonymous"></script>
     <title>3D</title>
+    <style>
+        .leermaserror {
+            border: 3px solid red;
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="header-principal">
-        <div class="contenedor">
-            <h1 class="header-logo">
-                <i class="fa-brands fa-unity" style="font-size: 48px; color: coral;"></i>
-                <a href="">SD3D</a>
-            </h1>
-            <nav class="header-navegacion">
-                <a class="header-navegacion-link" href="./index.html">Home</a>
-                <a class="header-navegacion-link" href="">Impresoras</a>
-                <a class="header-navegacion-link" href="./filamentos.html">Filamentos</a>
-                <a class="header-navegacion-link" href="./contacto.html">Contactenos</a>
-            </nav>
-            <div>
-                <i class="fa-brands fa-facebook" style="font-size: 28px;"></i>
-                <i class="fa-brands fa-twitter" style="font-size: 28px;"></i>
-                <i class="fa-brands fa-instagram" style="font-size: 28px;"></i>
-            </div>
-        </div>
-    </header>
-    <div class="banner" style="height: 400px; background-color: coral">
-        BANNER
-    </div>
-    <div class="contenedorprincipal">
-        <!--<main>-->
-        <div class="contenedormain">
-            <div class="contenedorform">
-                <div class="textform">
-                    <h1>Contactanos</h1>
-                    <h2>Deja tus datos y nos estaremos comunicando.</h2>
+    <div class="sombra">
+        <div class="pad10">
+            <header class="header-principal">
+                <div class="contenedor">
+                    <h1 class="header-logo"> <i class="fa-brands fa-unity" style="font-size: 48px; color: coral;"></i>
+                        <a href="">SD3D</a>
+                    </h1>
+                    <nav class="header-navegacion"> <a class="header-navegacion-link" href="./index.html">Home</a> <a
+                            class="header-navegacion-link" href="">Impresoras</a> <a class="header-navegacion-link"
+                            href="./filamentos.html">Filamentos</a> <a class="header-navegacion-link"
+                            href="./contacto.html">Contactenos</a>
+                    </nav>
+                    <div> <i class="fa-brands fa-facebook" style="font-size: 28px;"></i> <i class="fa-brands fa-twitter"
+                            style="font-size: 28px;"></i> <i class="fa-brands fa-instagram"
+                            style="font-size: 28px;"></i>
+                    </div>
                 </div>
-                <div class="form">
-                    <form class="formulario" action="">
-                        <div> 
-                            <input class="edtform" type="text" placeholder="Nombre:">
-                            <input class="edtform" type="text" placeholder="Email:">
+            </header>
+        </div>
+
+        <div class="contenedorprincipal">
+            <!--<main>-->
+            <div class="contenedormain">
+                <div class="contenedorform">
+                    <div class="textform">
+                        <h1>Contactanos</h1>
+                        <h2>Deja tus datos y nos estaremos comunicando.</h2>
+                    </div>
+                    <div class="form"> 
+                        <form class=" formulario" onsubmit="return enviar()">
+                        <div>
+                            <input id="edtnombre" class="edtform" type="text" placeholder="Nombre:" />
+                            <input id="edtemail" class="edtform" type="text" placeholder="Email:" />
                         </div>
-                        <div> 
-                            <input class="edtform" type="text" placeholder="Tel:">
-                            <input class="edtform" type="text" placeholder="Asunto:">
+                        <div>
+                            <input id="edttel" class="edtform" type="text" placeholder="Tel:" />
+                            <input id="edtasunto" class="edtform" type="text" placeholder="Asunto:" />
                         </div>
-                        <textarea class="textareaform" cols="30" rows="10" placeholder="Escriba aqui el mensaje."></textarea>
-                        
-                        <a class="leermas">Enviar</a>
-                    </form>
+                        <textarea id="edtmensaje" class="textareaform" cols="30" rows="10"
+                            placeholder="Escriba aqui el mensaje."></textarea>
+                        <br>
+                        <button class="leermas" >Enviar</button>
+
+                        </form>
+                        <div class="datos"></div>
+                    </div>
                 </div>
             </div>
+            <footer class="footcontenedor">
+                <div class="foot">
+                    <h2><i class="fa-brands fa-unity"></i>SD3D</h2> <a href="">Home</a> <a href="">Noticias</a> <a
+                        href="">Blog</a> <a href="">Foro</a>
+                </div>
+                <div class="foot">
+                    <h2><i class="fa-solid fa-print"></i>IMPRESORAS</h2> <a href="">FDM</a> <a href="">Resina</a> <a
+                        href="">Modelos</a> <a href="">Matenimiento</a>
+                </div>
+                <div class="foot">
+                    <h2><i class="fa-solid fa-circle-notch"></i>INSUMOS</h2> <a href="">Filmanetos</a> <a
+                        href="">Resinas</a> <a href="">Técnicos</a> <a href="">Colores</a>
+                </div>
+                <div class="foot">
+                    <h2><i class="fa-solid fa-address-card"></i>CONTACTO</h2> <a href="">Formulario de contacto</a> <a
+                        href="">email@sd3d.com</a> <a href="">tel: 456-457893</a> <a href="">direccion postal</a>
+                </div>
+            </footer>
+            <div class="marcas">
+                <img src="./img/logotipo-arg-artilley.png" width="100px" />
+                <img src="./img/creality-logo.png" width="100px" />
+                <img src="./img/prusa.jpg" width="100px" />
+                <img src="./img/Logo-grilon.png" width="100px" />
+                <img src="./img/Printalot-logo.png" width="100px" />
+            </div>
         </div>
-        </main>
-        <footer class="footcontenedor">
-
-            <div class="foot">
-                <h2><i class="fa-brands fa-unity"></i>SD3D</h2>
-                <a href="">Home</a>
-                <a href="">Noticias</a>
-                <a href="">Blog</a>
-                <a href="">Foro</a>
-            </div>
-            <div class="foot">
-                <h2><i class="fa-solid fa-print"></i>IMPRESORAS</h2>
-                <a href="">FDM</a>
-                <a href="">Resina</a>
-                <a href="">Modelos</a>
-                <a href="">Matenimiento</a>
-
-            </div>
-            <div class="foot">
-                <h2><i class="fa-solid fa-circle-notch"></i>INSUMOS</h2>
-                <a href="">Filmanetos</a>
-                <a href="">Resinas</a>
-                <a href="">Técnicos</a>
-                <a href="">Colores</a>
-            </div>
-            <div class="foot">
-                <h2><i class="fa-solid fa-address-card"></i>CONTACTO</h2>
-                <a href="">Formulario de contacto</a>
-                <a href="">email@sd3d.com</a>
-                <a href="">tel: 456-457893</a>
-                <a href="">direccion postal</a>
-
-            </div>
-        </footer>
-        <div class="marcas">
-
-            <img src="./img/logotipo-arg-artilley.png" width="100px">
-            <img src="./img/creality-logo.png" width="100px">
-            <img src="./img/prusa.jpg" width="100px">
-            <img src="./img/Logo-grilon.png" width="100px">
-            <img src="./img/Printalot-logo.png" width="100px">
-        </div>
-
     </div>
-
-
 </body>
+<script>
+    function enviar(){
+        let nombre = document.getElementById("edtnombre");
+        let email = document.getElementById("edtemail");
+        let tel = document.getElementById("edttel");
+        let asunto = document.getElementById("edtasunto");
+        let mensaje = document.getElementById("edtmensaje");
+        let datos = document.getElementById("datos");
+        let error = false;
+
+        nombre.placeholder = "Nombre:";
+        nombre.classList.remove("leermaserror");
+        email.placeholder = "Email:";
+        email.classList.remove("leermaserror");
+        tel.placeholder = "Tel:";
+        tel.classList.remove("leermaserror");
+        asunto.placeholder = "Asunto:";
+        asunto.classList.remove("leermaserror");
+        mensaje.placeholder = "Escriba aqui el mensaje.";
+        mensaje.classList.remove("leermaserror");
+
+        if (nombre.value == "") {
+            nombre.placeholder = "INGRESE UN NOMBRE";
+            nombre.classList.add("leermaserror");
+            error = true;
+        }
+        if (email.value == "") {
+            email.placeholder = "INGRESE UN EMAIL";
+            email.classList.add("leermaserror");
+            error = true;
+        }
+        if (tel.value == "") {
+            tel.placeholder = "INGRESE UN TELEFONO";
+            tel.classList.add("leermaserror");
+            error = true;
+        }
+        if (asunto.value == "") {
+            asunto.placeholder = "INGRESE UN ASUNTO";
+            asunto.classList.add("leermaserror");
+            error = true;
+        }
+        if (mensaje.value == "") {
+            mensaje.placeholder = "INGRESE UN MENSAJE";
+            mensaje.classList.add("leermaserror");
+            error = true;
+        }
+
+        if (error == false) {
+            let html = "<h1>Gracias pronto nos comunicaremos</h1>"
+            datos.innerHTML = html;
+            console.log("entro");
+
+        }
+        return false;
+    }
+
+</script>
 
 </html>

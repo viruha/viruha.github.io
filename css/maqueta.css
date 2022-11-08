@@ -8,13 +8,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
 }
 
 .header-logo {
     display: flex;
     align-items: center;
-    ;
+    
 }
 
 .contenedorprincipal {
