@@ -47,12 +47,12 @@
             <!--<main>-->
             <div class="contenedormain">
                 <div class="contenedorform">
-                    <div class="textform">
+                    <div id="textform" class="textform">
                         <h1>Contactanos</h1>
                         <h2>Deja tus datos y nos estaremos comunicando.</h2>
                     </div>
-                    <div class="form"> 
-                        <form class=" formulario" onsubmit="return enviar()">
+                    <div id="form" class="form"> 
+                        <form class=" formulario" onsubmit="return false">
                         <div>
                             <input id="edtnombre" class="edtform" type="text" placeholder="Nombre:" />
                             <input id="edtemail" class="edtform" type="text" placeholder="Email:" />
@@ -64,11 +64,12 @@
                         <textarea id="edtmensaje" class="textareaform" cols="30" rows="10"
                             placeholder="Escriba aqui el mensaje."></textarea>
                         <br>
-                        <button class="leermas" >Enviar</button>
+                        <button class="leermas" type="submit" onclick="enviar()">Enviar</button>
 
                         </form>
-                        <div class="datos"></div>
+                        
                     </div>
+                    <div id="datos"></div>
                 </div>
             </div>
             <footer class="footcontenedor">
@@ -101,6 +102,7 @@
 </body>
 <script>
     function enviar(){
+
         let nombre = document.getElementById("edtnombre");
         let email = document.getElementById("edtemail");
         let tel = document.getElementById("edttel");
@@ -148,8 +150,14 @@
 
         if (error == false) {
             let html = "<h1>Gracias pronto nos comunicaremos</h1>"
-            datos.innerHTML = html;
-            console.log("entro");
+            html = html + "Nombre: " + nombre.value + "<br>";
+            html = html + "Email: " + email.value + "<br>";
+            html = html + "Tel: " + tel.value + "<br>";
+            html = html + "Asunto: " + asunto.value + "<br>";
+            html = html + "Mensaje: " + mensaje.value + "<br>";
+            datos.innerHTML = html ;
+            document.getElementById("form").style.display = "none";
+            document.getElementById("textform").style.display = "none";
 
         }
         return false;
