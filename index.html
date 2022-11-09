@@ -27,7 +27,8 @@
         </header>   
     </div>      
         <div class="banner" style="height: 400px; background-color: coral"> 
-            BANNER
+            <img id = "imgscroll" src="./img/1.jpeg" alt="" width="100%" height="100%">
+            <button  onclick="avanzar()" style="position: absolute; left: 1000px; top: 335px;">AVANZAR</button>
 </div>         
         <div class="contenedorprincipal"> 
             <!--<main>-->             
@@ -77,3 +78,27 @@
 </div>  
 </div>
 </body>
+<script>
+    let carrusel = ["./img/1.jpg","./img/2.jpeg","./img/3.jpeg","./img/4.jpeg","./img/5.jpeg"];
+    let i = 0;
+    let img = document.getElementById("imgscroll");
+
+    function avanzar(){
+        if (i == carrusel.length) {
+            i=0;
+        }else{
+            i++;
+        }
+        img.src = carrusel[i];
+    }
+
+    function retroceder(){
+        if (i == 0) {
+            i=carrusel.length;
+        }else{
+            i--
+        }
+}
+
+</script>
+</html>
