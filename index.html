@@ -1,104 +1,135 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head> 
-        <meta charset="UTF-8"/> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-        <link rel="stylesheet" href="css/reset.css"/> 
-        <link rel="stylesheet" href="css/style.css"/> 
-        <link rel="stylesheet" href="css/maqueta.css"/> 
-        <link rel="preconnect" href="https://fonts.googleapis.com"/> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
-        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet"/> 
-        <script src="https://kit.fontawesome.com/b67d1146f3.js" crossorigin="anonymous"></script>         
-        <title>3D</title>         
-    </head>     
-    <body> 
-        <div class="sombra">
-            <div class="pad10">
-        <header class="header-principal"> 
-            <div class="contenedor"> 
-                <h1 class="header-logo"> <i class="fa-brands fa-unity" style="font-size: 48px; color: coral;"></i> <a href="">SD3D</a> </h1> 
-                <nav class="header-navegacion"> <a class="header-navegacion-link" href="./index.html">Home</a> <a class="header-navegacion-link" href="">Impresoras</a> <a class="header-navegacion-link" href="./filamentos.html">Filamentos</a> <a class="header-navegacion-link" href="./contacto.html">Contactenos</a> 
-                </nav>                 
-                <div> <i class="fa-brands fa-facebook" style="font-size: 28px;"></i> <i class="fa-brands fa-twitter" style="font-size: 28px;"></i> <i class="fa-brands fa-instagram" style="font-size: 28px;"></i> 
-                </div>                 
-            </div>             
-        </header>   
-    </div>      
-        <div class="banner" style="height: 400px; background-color: coral"> 
-            <img id = "imgscroll" src="./img/1.jpeg" alt="" width="100%" height="100%">
-            <button  onclick="avanzar()" style="position: absolute; left: 1000px; top: 335px;">AVANZAR</button>
-</div>         
-        <div class="contenedorprincipal"> 
-            <!--<main>-->             
-            <div class="contenedormain"> 
-                <div class="impresoras"> 
-                    <div class="impresoraimagen"> 
-                        <img src="./img/Impresora.jpeg" alt="" height="400px"/> 
-                    </div>                     
-                    <div class="impresoratexto"> 
-                        <h1>IMPRESORAS</h1> 
-                        <p>Las impresoras 3D utilizando su materia prima son las que dan forma a los distintos modelos diseñados por algún soft especializado, el avance en el rubro y el costo bajo ya hiso posible el acceso a esta tecnología desde el hogar para uso hobbysta, existen varios tipo de esta aunque las más difundidas son las FDM (Fused Deposition Modeling o modelado por deposición fundida) que usan filamentos y SLA (Stereolithography Apparatus o aparato de estereolitografía) que usan resina fundida, además de diferentes tamaños y capacidad de usar variedades de filamento…</p> <a class="leermas" href="">Leer más</a> 
-                    </div>                     
-                </div>                 
-                <div class="filamentos"> 
-                    <div class="filamentotexto"> 
-                        <h1>FILAMENTOS</h1> 
-                        <p>Los filamentos son la materia prima que utilizan las impresoras 3D para hacer realidad todos los diseños e increíbles cosas que las impresoras 3D pueden hacer. La mayoría, están basados a partir de plásticos, pero los hay de otros elementos, también existen en otro tipo de presentación dependiendo del tipo impresora y tecnología de la misma, un ejemplo son las impresoras de resina, también dependen de la pieza a imprimir, para decoración, flexibles, entretenimiento a piezas mecánicas para maquinas industriales...</p> <a class="leermas" href="">Leer más</a> 
-                    </div>                     
-                    <div class="filamentoimagen"> 
-                        <img src="./img/Filamentos.jpeg" alt="" height="400px"/> 
-                    </div>                     
-                </div>                 
-            </div>             
-                 
-        <footer class="footcontenedor"> 
-            <div class="foot"> 
-                <h2><i class="fa-brands fa-unity"></i>SD3D</h2> <a href="">Home</a> <a href="">Noticias</a> <a href="">Blog</a> <a href="">Foro</a> 
-            </div>             
-            <div class="foot"> 
-                <h2><i class="fa-solid fa-print"></i>IMPRESORAS</h2> <a href="">FDM</a> <a href="">Resina</a> <a href="">Modelos</a> <a href="">Matenimiento</a> 
-            </div>             
-            <div class="foot"> 
-                <h2><i class="fa-solid fa-circle-notch"></i>INSUMOS</h2> <a href="">Filmanetos</a> <a href="">Resinas</a> <a href="">Técnicos</a> <a href="">Colores</a> 
-            </div>             
-            <div class="foot"> 
-                <h2><i class="fa-solid fa-address-card"></i>CONTACTO</h2> <a href="">Formulario de contacto</a> <a href="">email@sd3d.com</a> <a href="">tel: 456-457893</a> <a href="">direccion postal</a> 
-            </div>             
-        </footer>         
-        <div class="marcas"> 
-            <img src="./img/logotipo-arg-artilley.png" width="100px"/> 
-            <img src="./img/creality-logo.png" width="100px"/> 
-            <img src="./img/prusa.jpg" width="100px"/> 
-            <img src="./img/Logo-grilon.png" width="100px"/> 
-            <img src="./img/Printalot-logo.png" width="100px"/> 
-        </div>         
-    </div>   
-</div>  
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/maqueta.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/b67d1146f3.js" crossorigin="anonymous"></script>
+    <title>3D</title>
+</head>
+
+<body>
+    <div class="sombra">
+        <div class="pad10">
+            <header class="header-principal">
+                <div class="contenedor">
+                    <h1 class="header-logo"> <i class="fa-brands fa-unity" style="font-size: 48px; color: coral;"></i>
+                        <a href="">SD3D</a> </h1>
+                    <nav class="header-navegacion"> <a class="header-navegacion-link" href="./index.html">Home</a> <a
+                            class="header-navegacion-link" href="">Impresoras</a> <a class="header-navegacion-link"
+                            href="./filamentos.html">Filamentos</a> <a class="header-navegacion-link"
+                            href="./contacto.html">Contactenos</a>
+                    </nav>
+                    <div> <i class="fa-brands fa-facebook" style="font-size: 28px;"></i> <i class="fa-brands fa-twitter"
+                            style="font-size: 28px;"></i> <i class="fa-brands fa-instagram"
+                            style="font-size: 28px;"></i>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="banner" style="height: 400px; background-color: coral;  ">
+            <img id="imgscroll" src="./img/1.jpeg" alt="" width="100%" height="100%">
+            <div>
+                <a class="prev" onclick="avanzar()">&#10094;</a>
+                <a class="next" onclick="avanzar()">&#10095;</a>
+            </div>
+
+
+
+        </div>
+        <div class="contenedorprincipal">
+            <!--<main>-->
+            <div class="contenedormain">
+                <div class="impresoras">
+                    <div class="impresoraimagen">
+                        <img src="./img/Impresora.jpeg" alt="" height="400px" />
+                    </div>
+                    <div class="impresoratexto">
+                        <h1>IMPRESORAS</h1>
+                        <p>Las impresoras 3D utilizando su materia prima son las que dan forma a los distintos modelos
+                            diseñados por algún soft especializado, el avance en el rubro y el costo bajo ya hiso
+                            posible el acceso a esta tecnología desde el hogar para uso hobbysta, existen varios tipo de
+                            esta aunque las más difundidas son las FDM (Fused Deposition Modeling o modelado por
+                            deposición fundida) que usan filamentos y SLA (Stereolithography Apparatus o aparato de
+                            estereolitografía) que usan resina fundida, además de diferentes tamaños y capacidad de usar
+                            variedades de filamento…</p> <a class="leermas" href="">Leer más</a>
+                    </div>
+                </div>
+                <div class="filamentos">
+                    <div class="filamentotexto">
+                        <h1>FILAMENTOS</h1>
+                        <p>Los filamentos son la materia prima que utilizan las impresoras 3D para hacer realidad todos
+                            los diseños e increíbles cosas que las impresoras 3D pueden hacer. La mayoría, están basados
+                            a partir de plásticos, pero los hay de otros elementos, también existen en otro tipo de
+                            presentación dependiendo del tipo impresora y tecnología de la misma, un ejemplo son las
+                            impresoras de resina, también dependen de la pieza a imprimir, para decoración, flexibles,
+                            entretenimiento a piezas mecánicas para maquinas industriales...</p> <a class="leermas"
+                            href="">Leer más</a>
+                    </div>
+                    <div class="filamentoimagen">
+                        <img src="./img/Filamentos.jpeg" alt="" height="400px" />
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footcontenedor">
+                <div class="foot">
+                    <h2><i class="fa-brands fa-unity"></i>SD3D</h2> <a href="">Home</a> <a href="">Noticias</a> <a
+                        href="">Blog</a> <a href="">Foro</a>
+                </div>
+                <div class="foot">
+                    <h2><i class="fa-solid fa-print"></i>IMPRESORAS</h2> <a href="">FDM</a> <a href="">Resina</a> <a
+                        href="">Modelos</a> <a href="">Matenimiento</a>
+                </div>
+                <div class="foot">
+                    <h2><i class="fa-solid fa-circle-notch"></i>INSUMOS</h2> <a href="">Filmanetos</a> <a
+                        href="">Resinas</a> <a href="">Técnicos</a> <a href="">Colores</a>
+                </div>
+                <div class="foot">
+                    <h2><i class="fa-solid fa-address-card"></i>CONTACTO</h2> <a href="">Formulario de contacto</a> <a
+                        href="">email@sd3d.com</a> <a href="">tel: 456-457893</a> <a href="">direccion postal</a>
+                </div>
+            </footer>
+            <div class="marcas">
+                <img src="./img/logotipo-arg-artilley.png" width="100px" />
+                <img src="./img/creality-logo.png" width="100px" />
+                <img src="./img/prusa.jpg" width="100px" />
+                <img src="./img/Logo-grilon.png" width="100px" />
+                <img src="./img/Printalot-logo.png" width="100px" />
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 <script>
-    let carrusel = ["./img/1.jpg","./img/2.jpeg","./img/3.jpeg","./img/4.jpeg","./img/5.jpeg"];
+    let carrusel = ["./img/1.jpeg", "./img/2.jpeg", "./img/3.jpeg", "./img/4.jpeg", "./img/5.jpeg"];
     let i = 0;
     let img = document.getElementById("imgscroll");
 
-    function avanzar(){
-        if (i == carrusel.length) {
-            i=0;
-        }else{
+    function avanzar() {
+        if (i == carrusel.length - 1) {
+            i = 0;
+        } else {
             i++;
         }
         img.src = carrusel[i];
     }
 
-    function retroceder(){
+    function retroceder() {
         if (i == 0) {
-            i=carrusel.length;
-        }else{
+            i = carrusel.length - 1;
+        } else {
             i--
         }
-}
+    }
 
 </script>
+
 </html>
