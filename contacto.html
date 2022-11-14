@@ -149,13 +149,18 @@
         }
 
         if (error == false) {
-            let html = "<h1>Gracias pronto nos comunicaremos</h1>"
+            let h1 = document.createElement("h1");
+            let p = document.createElement("p")
+            h1.innerHTML = "Gracias pronto nos comunicaremos";
+            let html;
             html = html + "Nombre: " + nombre.value + "<br>";
             html = html + "Email: " + email.value + "<br>";
             html = html + "Tel: " + tel.value + "<br>";
             html = html + "Asunto: " + asunto.value + "<br>";
             html = html + "Mensaje: " + mensaje.value + "<br>";
-            datos.innerHTML = html ;
+            p.innerHTML = html;
+            datos.appendChild(h1);
+            datos.appendChild(p);
             document.getElementById("form").style.display = "none";
             document.getElementById("textform").style.display = "none";
 
