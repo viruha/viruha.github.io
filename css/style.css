@@ -173,3 +173,31 @@ i {
     height: 400px;
     
   }
+
+  .contfila{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    max-width: 1200px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .tipofila{
+   min-width: 30%;
+  }
+
+  .tipofila h1{
+    color: coral;
+    font-style: italic;
+   }
+
+  .fichafila img{
+    display:block;
+    max-width:100%;
+    height:auto;
+   
+  }
