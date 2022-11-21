@@ -127,7 +127,7 @@
             nombre.classList.add("leermaserror");
             error = true;
         }
-        if (email.value == "") {
+        if (/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(email.value) == false) {
             email.placeholder = "INGRESE UN EMAIL";
             email.classList.add("leermaserror");
             error = true;
